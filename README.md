@@ -8,7 +8,7 @@ https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
 
 ## Circuit
 
-
+![Breezy Circuit Diagram](./prototype/prototype_circuit.svg)
 
 
 ## Script
