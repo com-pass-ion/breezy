@@ -1,13 +1,14 @@
-![prototype_circuit](https://github.com/user-attachments/assets/68ce3898-9f7e-49d6-8dff-18074348bb81)# breezy
+# breezy
 Turn your breath into light.
 
 ## Simulation
 
-
 https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
+
 
 ## Circuit
 
+![prototype_circuit](https://github.com/user-attachments/assets/68ce3898-9f7e-49d6-8dff-18074348bb81)
 ![Uploading prototy<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -1588,6 +1589,7 @@ z
  </defs>
 </svg>
 pe_circuit.svg…]()
+
 
 ## Script
 
