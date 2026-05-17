@@ -1,7 +1,7 @@
 # *breezy:* 
-## *- Ihr Meditationstrainer für die Hosentasche -*
+## ~ *Ihr Meditationstrainer für die Hosentasche* ~
 
-**Kurzbeschreibung:**
+### Kurzbeschreibung:
   
 ***breezy*** ist ein eigenständiger, adaptiver Biofeedback-Meditationstrainer auf Basis eines ESP32.
 
@@ -27,9 +27,9 @@ Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Signalve
 
 ### Technische Umsetzung
 
-![Breezy Circuit Diagram](./prototype/prototype_circuit.svg)
+![***Prototyp 0.0.1:***](./prototype_0.0.1/pwm_script_23_02_2026.py)
 
-***Prototyp 0.0.1:***
+![Breezy Circuit Diagram](./circuit/prototype_circuit.svg)
 
 - Entwicklungsboard: Unihiker Ein‑Platinen‑Computer
 - Prototyp-Sprache: Python
