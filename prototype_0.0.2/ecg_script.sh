@@ -26,12 +26,17 @@ stop_stream=(
 
 cleanup() {
     local delay="$1"
-    echo -e "\n🛑 Stopping stream and disconnecting cleanly..."
+    
+    if (( DEBUG_FLAG ));then
+	echo -e "\n🛑 Stopping stream and disconnecting cleanly..."
+    fi
     for cmd in "${stop_stream[@]}"; do
 	to_coproc "$cmd" "$delay"
     done
-
-    echo "👋 Interface released successfully."
+    if (( DEBUG_FLAG ));then
+	echo "👋 Interface released successfully."
+    fi
+    
     exit 0
 }
 
@@ -39,9 +44,11 @@ cleanup() {
 to_coproc() {
     local cmd="$1"
     local delay="$2"
+
     if (( DEBUG_FLAG ));then
-	echo "[DEBUG]: $cmd" >&2 "${BLUETOOTHCTL[1]}";
+	echo "[Send]: $cmd"
     fi
+    echo "$cmd" >& "${BLUETOOTHCTL[1]}";
     sleep "$delay";
 }
 
