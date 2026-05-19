@@ -29,7 +29,7 @@ Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Signalve
 
 ![***Prototyp 0.0.2***](./prototype_0.0.2/)
 
-![***Prototyp 0.0.1:***](./prototype_0.0.1/pwm_script_23_02_2026.py)
+![***Prototyp 0.0.1***](./prototype_0.0.1/pwm_script_23_02_2026.py)
 
 ![Breezy Circuit Diagram](./circuit/prototype_circuit.svg)
 
