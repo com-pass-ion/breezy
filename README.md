@@ -5,6 +5,10 @@
   
 ***breezy*** ist ein eigenständiger, adaptiver Biofeedback-Meditationstrainer auf Basis eines ESP32.
 
+![***Prototyp 0.0.2***](./prototype_0.0.2/)
+
+![***Prototyp 0.0.1***](./prototype_0.0.1/pwm_script_23_02_2026.py)
+
 https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
 
 ### Zielsetzung und Konzept
@@ -26,10 +30,6 @@ Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Signalve
 - Prototyping in Python, finale Implementierung in C auf ESP32
 
 ### Technische Umsetzung
-
-![***Prototyp 0.0.2***](./prototype_0.0.2/)
-
-![***Prototyp 0.0.1***](./prototype_0.0.1/pwm_script_23_02_2026.py)
 
 ![Breezy Circuit Diagram](./circuit/prototype_circuit.svg)
 
