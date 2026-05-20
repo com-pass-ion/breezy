@@ -20,6 +20,7 @@ start_stream=(
 stop_stream=(
     "select-attribute $PMD_DATA_UUID"
     "notify off"
+    "back"
     "disconnect"
     "exit"
 )
@@ -48,7 +49,9 @@ to_coproc() {
     if (( DEBUG_FLAG ));then
 	echo "[Send]: $cmd"
     fi
-    echo "$cmd" >& "${BLUETOOTHCTL[1]}";
+    
+    echo "$cmd" >& "${BLUETOOTHCTL[1]}"
+    
     sleep "$delay";
 }
 
@@ -64,6 +67,7 @@ if (( DEBUG_FLAG ));then
     echo "Press Ctrl+C at any time to exit safely."
 fi
 
+### REDIRECTION FOR DEBUG-MODE
 coproc BLUETOOTHCTL { bluetoothctl; }
 sleep 1
 
@@ -72,15 +76,28 @@ trap "cleanup 2" INT TERM
 to_coproc "connect $POLAR_MAC" 3
 
 for cmd in "${start_stream[@]}"; do
-    to_coproc "$cmd" 0.5
+    to_coproc "$cmd" 2
 done
 
 if (( DEBUG_FLAG ));then
     echo "📡 Streaming active. Listening for incoming data..."
 fi
 
+
+packet_array=()
+
 while read -r line <& "${BLUETOOTHCTL[0]}"; do
-    if [[ "$line" =~ $REGEX_FULL_LINE || "$line" =~ $REGEX_LAST_LINE ]]; then
-	echo "${BASH_REMATCH[0]}"
-    fi
+    if [[ "$line" =~ $REGEX_FULL_LINE ]]; then
+	IFS=$' ' read -r -a line_array <<< "${BASH_REMATCH[0]}"
+	packet_array+=( "${line_array[@]}")
+	
+    elif [[ "$line" =~ $REGEX_LAST_LINE ]]; then
+	IFS=$' ' read -r -a line_array <<< "${BASH_REMATCH[0]}"
+	packet_array+=( "${line_array[@]}")
+
+	### PARSING LOGIC
+	echo "${packet_array[@]}"
+
+	packet_array=()
+    fi    
 done
