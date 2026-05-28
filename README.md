@@ -5,11 +5,11 @@
   
 ***breezy*** ist ein eigenständiger, adaptiver Biofeedback-Meditationstrainer auf Basis eines ESP32.
 
-![***Prototyp 0.0.2***](./prototype_0.0.2/)
+[***Prototyp 0.0.2***](./prototype_0.0.2/)
 
 ![Gnuplot Peak Detection](./prototype_0.0.2/gnuplot/peak_detection/peak_detection.svg)
 
-![***Prototyp 0.0.1***](./prototype_0.0.1/pwm_script_23_02_2026.py)
+[***Prototyp 0.0.1***](./prototype_0.0.1/pwm_script_23_02_2026.py)
 
 https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
 
