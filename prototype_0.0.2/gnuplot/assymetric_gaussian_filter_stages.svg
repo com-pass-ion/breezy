@@ -11,7 +11,7 @@
 
 <g id="gnuplot_canvas">
 
-<rect x="0" y="0" width="1920" height="1080" fill="none"/>
+<rect x="0" y="0" width="1920" height="1080" fill="#0d1117"/>
 <defs>
 
 	<circle id='gpDot' r='0.5' stroke-width='0.5' stroke='currentColor'/>
