@@ -22,33 +22,33 @@ Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Objekt-o
 - finale Implementierung in C auf ESP32
 
 
-[***Prototyp 0.0.2***](./prototype_0.0.2/)
+### [***Prototyp 0.0.2***](./prototype_0.0.2/)
 
-### Zielsetzung für nächste Projektphase:
+***Zielsetzung***:
 
 Funktionsfähiger Python-Prototyp mit nicht-simuliertem Signal und adaptiver Lichtvisualisierung.
 
-#### Modellierung der Atemphasen als assymetrische Gauß-Glocke in gnuplot:
+***Modellierung der Atemphasen als assymetrische Gauß-Glocke in gnuplot:***
 
 ![Illustration: Wave Interaction](./prototype_0.0.2/gnuplot/wave_interaction.svg)
 
 ![Scalable, Assymetric Gaussian Curve](./prototype_0.0.2/gnuplot/assymetric_gaussian_filter_stages.svg)
 
-#### Visualisierung eines einfachen Algorithmus zur dynamischen Minimum/Maximum-Erkennung
+***Visualisierung eines einfachen Algorithmus zur dynamischen Minimum/Maximum-Erkennung***
 
 ![Peak Detection Algorithm](./prototype_0.0.2/gnuplot/peak_detection/peak_detection.svg)
 
-### Integration echter Biofeedback-Signale
+***Integration echter Biofeedback-Signale***
 
 #### [Python](./prototype_0.0.2/python)
 
 #### [Bash](./prototype_0.0.2/bash)
 
-[***Prototyp 0.0.1***](./prototype_0.0.1/)
+### [***Prototyp 0.0.1***](./prototype_0.0.1/)
 
 https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
 
-### Technische Umsetzung
+***Technische Umsetzung***
 
 ![Breezy Circuit Diagram](./prototype_0.0.1/circuit/prototype_circuit.svg)
 
@@ -61,7 +61,7 @@ https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
   
 - Prototyp-Sprache: Python
 
-### Einschränkungen 
+***Einschränkungen***
 
 - PWM-Aktualisierungsrate ist auf 20-30Hz beim Unihiker begrenzt
 - Atemmodellierung basiert auf einer symmetrischen Gauß-Kurve und ist noch nicht auf Atemphasen-/pausen skalierbar.
