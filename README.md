@@ -11,7 +11,7 @@ Ein stand-alone Gerät, das sich automatisch mit einem Polar-Device verbindet, E
 
 Die Nutzererfahrung steht im Vordergrund; eine App dient primär zur Datenauswertung und zur Auswahl grundlegender Funktionen.
 
-Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Objektorientierter Programmierung, Signalverarbeitung und Embedded-Programmierung in C.
+Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Objekt-orientierter Programmierung, Signalverarbeitung und Embedded-Programmierung in C.
 
 ***Konzept:***
 
@@ -30,7 +30,7 @@ Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Objektor
 
 Funktionsfähiger Python-Prototyp mit nicht-simuliertem Signal und adaptiver Lichtvisualisierung.
 
-#### Modellierung der Atemphasen als assymetrische Gaußklocke in gnuplot:
+#### Modellierung der Atemphasen als assymetrische Gauß-Glocke in gnuplot:
 
 ![Illustration: Wave Interaction](./prototype_0.0.2/gnuplot/wave_interactions.svg)
 
@@ -59,7 +59,7 @@ https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
 	- hohe Widerstandswerte dienen der Augenschonung
 	- Kondensator wird je nach Testziel angepasst oder entfernt
   - Validierung grundlegender Programmierkonzepte
-  - Erzeugung eines möglichst "weichen"", hochauflösenden PWM‑Signals
+  - Erzeugung eines möglichst "weichen", hochauflösenden PWM‑Signals
   
 - Prototyp-Sprache: Python
 
@@ -67,7 +67,7 @@ https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
 
 - PWM-Aktualisierungsrate ist auf 20-30Hz beim Unihiker begrenzt
 - Atemmodellierung basiert auf einer symmetrischen Gauß-Kurve und ist noch nicht auf Atemphasen-/pausen skalierbar.
-- Der Prototyp arbeitet derzeit mit ***simulierten*** Signalen.
+- Der Prototyp arbeitet mit ***simulierten*** Signalen.
 - Entwicklung ist momentan an den Unihiker als Board gebunden.
 
 ### Kontakt und Mitwirkung
