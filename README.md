@@ -34,15 +34,15 @@ Funktionsfähiger Python-Prototyp mit nicht-simuliertem Signal und adaptiver Lic
 
 ![Scalable, Assymetric Gaussian Curve](./prototype_0.0.2/gnuplot/assymetric_gaussian_filter_stages.svg)
 
-***Visualisierung eines einfachen Algorithmus zur dynamischen Minimum/Maximum-Erkennung***
+***Visualisierung eines einfachen Algorithmus zur dynamischen Minimum/Maximum-Erkennung in gnuplot***
 
 ![Peak Detection Algorithm](./prototype_0.0.2/gnuplot/peak_detection/peak_detection.svg)
 
 ***Integration echter Biofeedback-Signale***
 
-#### [Python](./prototype_0.0.2/python)
+- [Python](./prototype_0.0.2/python)
 
-#### [Bash](./prototype_0.0.2/bash)
+- [Bash](./prototype_0.0.2/bash)
 
 ### [***Prototyp 0.0.1***](./prototype_0.0.1/)
 
