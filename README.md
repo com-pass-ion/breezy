@@ -24,17 +24,15 @@ Das Projekt dient zugleich dem vertieften Verständnis von Algorithmen, Objektor
 
 [***Prototyp 0.0.2***](./prototype_0.0.2/)
 
-![Gnuplot Peak Detection](./prototype_0.0.2/gnuplot/peak_detection/peak_detection.svg)
-
 ### Zielsetzung für nächste Projektphase:
 
 Funktionsfähiger Python-Prototyp mit nicht-simuliertem Signal und adaptiver Lichtvisualisierung.
 
 #### Modellierung der Atemphasen als assymetrische Gaußklocke in gnuplot:
 
-![Illustration: Wave Interaction](./prototype_0.0.2/gnuplot/wave_interactions.svg)
+![Illustration: Wave Interaction](./prototype_0.0.2/gnuplot/wave_interaction.svg)
 
-![Scalable, Assymetric Gaussian Curve](./prototype_0.0.2/gnuplot/assymmetric_gaussian_filter_stages.svg)
+![Scalable, Assymetric Gaussian Curve](./prototype_0.0.2/gnuplot/assymetric_gaussian_filter_stages.svg)
 
 #### Visualisierung eines einfachen Algorithmus zur dynamischen Minimum/Maximum-Erkennung
 
