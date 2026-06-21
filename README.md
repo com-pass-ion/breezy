@@ -38,15 +38,21 @@ Funktionsfähiger Python-Prototyp mit nicht-simuliertem Signal und adaptiver Lic
 
 ![Peak Detection Algorithm](./prototype_0.0.2/gnuplot/peak_detection/peak_detection.svg)
 
+***Live EKG:***
+
+./prototype_0.0.2/pyqt/live_ecg.mp4
+
 ***Integration echter Biofeedback-Signale:***
 
 - [Python](./prototype_0.0.2/python)
 
 - [Bash](./prototype_0.0.2/bash)
 
+- [PyQt](./prototype_0.0.2/pyqt)
+
 ### [***Prototyp 0.0.1***](./prototype_0.0.1/)
 
-https://github.com/user-attachments/assets/95bb95b5-2758-490a-abf5-11077871adc9
+./prototype_0.0.1/prototype_0_0_1.mp4
 
 ***Technische Umsetzung***
 
