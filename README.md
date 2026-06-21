@@ -40,7 +40,7 @@ Funktionsfähiger Python-Prototyp mit nicht-simuliertem Signal und adaptiver Lic
 
 ***Live EKG:***
 
-./prototype_0.0.2/pyqt/live_ecg.mp4
+https://github.com/user-attachments/assets/553b87d6-a807-4eca-b360-1aa7911ad49d
 
 ***Integration echter Biofeedback-Signale:***
 
@@ -52,7 +52,7 @@ Funktionsfähiger Python-Prototyp mit nicht-simuliertem Signal und adaptiver Lic
 
 ### [***Prototyp 0.0.1***](./prototype_0.0.1/)
 
-./prototype_0.0.1/prototype_0_0_1.mp4
+https://github.com/user-attachments/assets/d9957e82-31d5-4e87-8af5-bd4e4a9ba08f
 
 ***Technische Umsetzung***
 
