@@ -1,5 +1,9 @@
 """
-memo to myself: add untrust, unpair to shell skript
+memo to myself:
+- add untrust, unpair to shell skript
+- dynamische skalierung
+- fenstergröße anpassen
+- deployment pipeline
 """
 import sys
 from math import inf
@@ -91,13 +95,19 @@ class DataTimer(QTimer):
 
 class HRV():
     bufferLength: int = 3
+    alphaExponentialMovingAverage: float = 0.02
+    complementAlphaExponentialMovingAverage: float = 1 - alphaExponentialMovingAverage
     
     def __init__(self, timer: DataTimer) -> None:
         self.timer = timer
         self.previousPeakTimeInNanoseconds: float = 0.0
         self.latestHRV: float = 0.0
+        
         self.buffer: deque = deque(maxlen = self.bufferLength)
-        self.runningMean: float = 0.0
+        self.movingAverage: float = 0.0
+        self.previousMovingAverage: float = 0.0
+
+        self.exponentialMovingAverage: float = 0.0
 
     def update(self) -> None:
         self.latestHRV = (
@@ -105,11 +115,23 @@ class HRV():
             - self.previousPeakTimeInNanoseconds
         )
         
-        # update running mean
+        # update moving average
         self.buffer.append(self.latestHRV)
-        self.runningMean = sum(self.buffer) / len(self.buffer)
-        
+        self.previousMovingAverage = self.movingAverage
+        self.movingAverage = sum(self.buffer) / len(self.buffer)
+
+        # update EMA
+        #self.exponentialMovingAverage = self.calculateExponentialMovingAverage()
+
+        # update timer
         self.previousPeakTimeInNanoseconds = self.timer.timeSinceStartInNanoseconds
+
+    def calculateExponentialMovingAverage(self) -> None:
+        self.exponentialMovingAverage = (
+            self.alphaExponentialMovingAverage * self.latestHRV
+            + self.complementAlphaExponentialMovingAverage * self.exponentialMovingAverage
+        )
+        
 
 
 
@@ -472,11 +494,14 @@ class GraphView(QMainWindow):
             # print(f"[HRV]: {self.hrv.latestHRV}")
 
 
-        hrvInMs = self.hrv.latestHRV / 1_000_000.0
+        # hrvInMs = self.hrv.latestHRV / 1_000_000.0
 
-        runningMean = self.hrv.runningMean
+        # movingAverage = self.hrv.movingAverage / 1_000_000.0
+        self.hrv.calculateExponentialMovingAverage()
+
+        exponentialMovingAverage = self.hrv.exponentialMovingAverage / 1_000_000.0
         
-        self.series["hrvSeries"].object.append(QPointF(x, hrvInMs))
+        self.series["hrvSeries"].object.append(QPointF(x, exponentialMovingAverage))
 
         # dynamically adjust y ranges
         if y > self.maxY or y < self.minY:
